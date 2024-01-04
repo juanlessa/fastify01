@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Node 20",
+    "_version": "20.1.0",
+    "compilerOptions": {
+        "lib": [
+            "es2023"
+        ],
+        "module": "Node16",
+        "target": "es2022",
+        "declaration": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "skipLibCheck": false,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node16",
+        "importHelpers": true,
+        "outDir": "./dist",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "typeRoots": [
+            "./node_modules/@types",
+            "src/@types"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "*.spec.ts",
+        "*.e2e-spec.ts",
+        "coverage",
+        "dist"
+    ]
+}

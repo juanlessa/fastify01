@@ -1,0 +1,45 @@
+{
+    "name": "fastify-01",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "knex": "node --import tsx ./node_modules/.bin/knex",
+        "lint": "eslint src --ext .ts --fix",
+        "dev": "tsx src/server.ts",
+        "dev:watch": "tsx watch src/server.ts",
+        "build": "tsup src",
+        "test": "vitest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juanlessa/fastify01.git"
+    },
+    "bugs": {
+        "url": "https://github.com/juanlessa/fastify01/issues"
+    },
+    "homepage": "https://github.com/juanlessa/fastify01#readme",
+    "author": "Juan Lessa",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "@types/supertest": "^6.0.2",
+        "sqlite3": "^5.1.7-rc.0",
+        "supertest": "^6.3.3",
+        "tsup": "^8.0.1",
+        "tsx": "^4.7.0",
+        "typescript": "^5.3.3",
+        "vitest": "^1.1.1"
+    },
+    "dependencies": {
+        "@fastify/cookie": "^9.2.0",
+        "dotenv": "^16.3.1",
+        "fastify": "^4.25.2",
+        "knex": "^3.1.0",
+        "pg": "^8.11.3",
+        "zod": "^3.22.4"
+    }
+}
